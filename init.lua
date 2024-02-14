@@ -2,23 +2,23 @@ local modules = {
 	{ moduleName = "config.commands", enabled = true },
 	{ moduleName = "config.keymaps", enabled = true },
 	{ moduleName = "config.settings", enabled = true },
-	{ moduleName = "unit.package", enabled = true },
-	{ moduleName = "unit.settings.icons", enabled = true },
-	{ moduleName = "unit.settings.lualine", enabled = true },
-	{ moduleName = "unit.settings.nvim-tree", enabled = true },
-	{ moduleName = "unit.settings.tree-sitter", enabled = true },
-	{ moduleName = "unit.settings.telescope", enabled = true },
-	{ moduleName = "unit.settings.formatter", enabled = true },
-	{ moduleName = "unit.settings.floaterm", enabled = true },
-	{ moduleName = "unit.settings.transparent", enabled = true },
-	{ moduleName = "unit.settings.notify", enabled = true },
-	{ moduleName = "unit.settings.tundra", enabled = true },
-	{ moduleName = "unit.settings.autopairs", enabled = true },
+	{ moduleName = "tool.package", enabled = true },
+	{ moduleName = "tool.settings.icons", enabled = true },
+	{ moduleName = "tool.settings.lualine", enabled = true },
+	{ moduleName = "tool.settings.nvim-tree", enabled = true },
+	{ moduleName = "tool.settings.tree-sitter", enabled = true },
+	{ moduleName = "tool.settings.telescope", enabled = true },
+	{ moduleName = "tool.settings.formatter", enabled = true },
+	{ moduleName = "tool.settings.floaterm", enabled = true },
+	{ moduleName = "tool.settings.transparent", enabled = true },
+	{ moduleName = "tool.settings.notify", enabled = true },
+	{ moduleName = "tool.settings.tundra", enabled = true },
+	{ moduleName = "tool.settings.autopairs", enabled = true },
 	{ moduleName = "lsp.mason.mason", enabled = true },
 }
 
-for _, unit in ipairs(modules) do
-	if unit.enabled then
-		require(unit.moduleName).Config()
+for _, tool in ipairs(modules) do
+	if tool.enabled then
+		require(tool.moduleName).Config()
 	end
 end
