@@ -25,10 +25,10 @@ function M.Config()
 			open_fn = function()
 				return require("packer.util").float({ border = "rounded" })
 			end,
-			working_sym = "󰑓",
+			working_sym = "󱥸",
 			error_sym = "",
 			done_sym = "󰩐",
-			removed_sym = "-",
+			removed_sym = "󰛌",
 			moved_sym = "→",
 			header_sym = "━",
 		},
@@ -51,6 +51,8 @@ function M.Config()
 			"williamboman/mason-lspconfig.nvim",
 			"neovim/nvim-lspconfig",
 		})
+
+		-- complete
 
 		-- code explanatory note
 		use({

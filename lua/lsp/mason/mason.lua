@@ -14,8 +14,8 @@ function M.Config()
 			height = 0.6,
 			icons = {
 				package_installed = "󰩐",
-				package_pending = "",
-				package_uninstalled = "󱒼",
+				package_pending = "󱥸",
+				package_uninstalled = "󰛌",
 			},
 		},
 	})

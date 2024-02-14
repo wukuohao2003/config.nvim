@@ -63,27 +63,16 @@ function M.Config()
 						symlink = "",
 						symlink_open = "",
 					},
+					git = {
+						unstaged = "󰜎",
+						staged = "󰜘",
+						unmerged = "",
+						renamed = "󰴒",
+						untracked = "",
+						deleted = "󱂥",
+						ignored = "◌",
+					},
 				},
-			},
-		},
-		ui = {
-			confirm = {
-				remove = true,
-				trash = true,
-			},
-		},
-		log = {
-			enable = false,
-			truncate = false,
-			types = {
-				all = false,
-				config = false,
-				copy_paste = false,
-				dev = false,
-				diagnostics = false,
-				git = false,
-				profile = false,
-				watcher = false,
 			},
 		},
 	})
