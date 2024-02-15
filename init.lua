@@ -16,6 +16,7 @@ local modules = {
 	{ moduleName = "tool.settings.autopairs", enabled = true },
 	{ moduleName = "lsp.mason.mason", enabled = true },
 	{ moduleName = "lsp.lsp", enabled = true },
+	{ moduleName = "lsp.snips.snips", enabled = true },
 }
 
 for _, tool in ipairs(modules) do

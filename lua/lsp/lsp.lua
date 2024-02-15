@@ -1,9 +1,16 @@
 local M = {}
 local status, cmp = pcall(require, "cmp")
+local luasnip = require("luasnip")
 
 if not status then
 	vim.notify("cmp is not found ...")
 	return false
+end
+
+local has_words_before = function()
+	unpack = unpack or table.unpack
+	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
 function M.Config()
@@ -18,8 +25,29 @@ function M.Config()
 			documentation = cmp.config.window.bordered(),
 		},
 		mapping = cmp.mapping.preset.insert({
-			["<Tab>"] = cmp.mapping.select_next_item(),
-			["<S-Tab>"] = cmp.mapping.select_prev_item(),
+			["<Tab>"] = cmp.mapping(function(fallback)
+				if cmp.visible() then
+					cmp.select_next_item()
+				-- You could replace the expand_or_jumpable() calls with expand_or_locally_jumpable()
+				-- that way you will only jump inside the snippet region
+				elseif luasnip.expand_or_jumpable() then
+					luasnip.expand_or_jump()
+				elseif has_words_before() then
+					cmp.complete()
+				else
+					fallback()
+				end
+			end, { "i", "s" }),
+
+			["<S-Tab>"] = cmp.mapping(function(fallback)
+				if cmp.visible() then
+					cmp.select_prev_item()
+				elseif luasnip.jumpable(-1) then
+					luasnip.jump(-1)
+				else
+					fallback()
+				end
+			end, { "i", "s" }),
 			["<CR>"] = cmp.mapping.confirm({ select = true }),
 		}),
 		sources = cmp.config.sources({
@@ -27,8 +55,6 @@ function M.Config()
 			{ name = "luasnip" },
 			{ name = "buffer" },
 			{ name = "path" },
-			-- { name = 'ultisnips' }, -- For ultisnips users.
-			-- { name = 'snippy' }, -- For snippy users.
 		}),
 		formatting = {
 			fields = {
