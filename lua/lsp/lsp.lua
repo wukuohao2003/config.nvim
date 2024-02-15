@@ -1,5 +1,4 @@
 local M = {}
-
 local status, cmp = pcall(require, "cmp")
 
 if not status then
@@ -41,7 +40,7 @@ function M.Config()
 				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
 				vim_item.menu = ({
 					nvim_lsp = "  [LSP]",
-					luasnip = "   LuaSnip",
+					lua_cmp = "   [LuaCmp]",
 					buffer = "  [BUFFER]",
 					path = "  [PATH]",
 				})[entry.source.name]
@@ -67,6 +66,13 @@ function M.Config()
 		}, {
 			{ name = "cmdline" },
 		}),
+	})
+
+	require("luasnip.loaders.from_vscode").lazy_load()
+	require("luasnip.loaders.from_vscode").lazy_load({
+		path = {
+			"~/.config/nvim/lua/lsp/snippets/",
+		},
 	})
 end
 
