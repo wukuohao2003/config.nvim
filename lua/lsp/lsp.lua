@@ -11,7 +11,7 @@ function M.Config()
 	cmp.setup({
 		snippet = {
 			expand = function(args)
-				require("luasnip").lsp_expand(args.body) -- For `luasnip` users.
+				require("luasnip").lsp_expand(args.body)
 			end,
 		},
 		window = {
@@ -26,12 +26,31 @@ function M.Config()
 		sources = cmp.config.sources({
 			{ name = "nvim_lsp" },
 			{ name = "luasnip" },
-			-- { name = 'ultisnips' }, -- For ultisnips users.
-			-- { name = 'snippy' }, -- For snippy users.
-		}, {
 			{ name = "buffer" },
 			{ name = "path" },
+			-- { name = 'ultisnips' }, -- For ultisnips users.
+			-- { name = 'snippy' }, -- For snippy users.
 		}),
+		formatting = {
+			fields = {
+				"abbr",
+				"kind",
+				"menu",
+			},
+			format = function(entry, vim_item)
+				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
+				vim_item.menu = ({
+					nvim_lsp = "  [LSP]",
+					luasnip = "   LuaSnip",
+					buffer = "  [BUFFER]",
+					path = "  [PATH]",
+				})[entry.source.name]
+				return vim_item
+			end,
+		},
+		experimental = {
+			ghost_text = true,
+		},
 	})
 
 	cmp.setup.cmdline({ "/", "?" }, {
