@@ -15,6 +15,7 @@ local modules = {
 	{ moduleName = "tool.settings.tundra", enabled = true },
 	{ moduleName = "tool.settings.autopairs", enabled = true },
 	{ moduleName = "lsp.mason.mason", enabled = true },
+	{ moduleName = "lsp.lsp", enabled = true },
 }
 
 for _, tool in ipairs(modules) do
