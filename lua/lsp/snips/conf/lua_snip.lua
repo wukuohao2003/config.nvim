@@ -8,7 +8,7 @@ return {
 			"pr",
 			fmt(
 				[[
-      local status, {} = pcall(require , "{}")
+      local status, {} = pcall(require, "{}")
 
       if not status then
         vim.notify("{} is not found ...")

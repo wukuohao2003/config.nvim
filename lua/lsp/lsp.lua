@@ -52,6 +52,7 @@ function M.Config()
 			{ name = "luasnip" },
 			{ name = "buffer" },
 			{ name = "path" },
+			{ name = "lua_cmp" },
 		}),
 		formatting = {
 			fields = {
@@ -63,9 +64,10 @@ function M.Config()
 				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
 				vim_item.menu = ({
 					nvim_lsp = "  [LSP]",
-					lua_cmp = "   [LuaCmp]",
+					lua_cmp = "  [LuaCmp]",
 					buffer = "  [BUFFER]",
 					path = "  [PATH]",
+					luasnip = "  [LuaSnip]",
 				})[entry.source.name]
 				return vim_item
 			end,
@@ -92,11 +94,6 @@ function M.Config()
 	})
 
 	require("luasnip.loaders.from_vscode").lazy_load()
-	require("luasnip.loaders.from_vscode").lazy_load({
-		path = {
-			"~/.config/nvim/lua/lsp/snippets/",
-		},
-	})
 end
 
 return M
