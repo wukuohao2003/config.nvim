@@ -29,6 +29,7 @@ function M.Config()
 	require("lsp.mason.config.python_conf").PythonLSP()
 	require("lsp.mason.config.typescript_conf").TypeScriptLSP()
 	require("lsp.mason.config.vue_conf").VueLSP()
+	require("lsp.mason.config.java_conf").JavaLSP()
 end
 
 return M

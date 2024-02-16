@@ -1,4 +1,5 @@
 local status, notify = pcall(require, "noice")
+
 local M = {}
 
 if not status then
@@ -12,6 +13,16 @@ function M.Config()
 	})
 
 	notify.setup({
+		filters = {
+			{
+				name = ".*",
+				opts = {
+					popup_opts = {
+						width = 30,
+					},
+				},
+			},
+		},
 		cmdline = {
 			enabled = true,
 			view = "cmdline_popup",
@@ -30,12 +41,26 @@ function M.Config()
 			},
 		},
 		messages = {
-			enabled = false,
+			enabled = true,
 			view = "notify",
 			view_error = "notify",
 			view_warn = "notify",
-			view_history = "messages",
+			view_history = "notify",
 			view_search = "virtualtext",
+		},
+		lsp = {
+			progress = {
+				enabled = true,
+				format = "lsp_progress",
+				format_done = "lsp_progress_done",
+				throttle = 1000 / 30,
+				view = "cmdline_popup",
+			},
+			message = {
+				enabled = true,
+				view = "notify",
+				opts = {},
+			},
 		},
 	})
 end

@@ -8,6 +8,7 @@ end
 
 function M.Config()
 	fmt.setup({
+		logging = false,
 		filetype = {
 			json = { require("formatter.filetypes.json").prettier },
 			javascript = { require("formatter.filetypes.javascript").prettier },
