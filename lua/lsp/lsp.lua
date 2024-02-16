@@ -21,6 +21,7 @@ function M.Config()
 			end,
 		},
 		window = {
+
 			completion = cmp.config.window.bordered(),
 			documentation = cmp.config.window.bordered(),
 		},
@@ -48,16 +49,16 @@ function M.Config()
 			["<CR>"] = cmp.mapping.confirm({ select = true }),
 		}),
 		sources = cmp.config.sources({
-			{ name = "nvim_lsp" },
 			{ name = "luasnip" },
+			{ name = "nvim_lsp" },
 			{ name = "buffer" },
 			{ name = "path" },
 			{ name = "lua_cmp" },
 		}),
 		formatting = {
 			fields = {
-				"abbr",
 				"kind",
+				"abbr",
 				"menu",
 			},
 			format = function(entry, vim_item)

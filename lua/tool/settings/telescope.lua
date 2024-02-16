@@ -21,14 +21,14 @@ function M.Config()
 				"__pycache__",
 				"%.log",
 			},
-			layout_config = {
-				width = 0.8,
-				height = 0.8,
-				prompt_position = "top",
-				preview_width = 0.6,
-			},
 			extensions = {},
 			sorting_strategy = "ascending",
+		},
+		pickers = {
+			oldfiles = {
+				theme = "dropdown",
+				previewer = false,
+			},
 		},
 	})
 end
