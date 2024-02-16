@@ -2,8 +2,8 @@ local M = {}
 
 function M.Config()
 	vim.g.mapleader = " "
-
 	local keymap = vim.keymap
+	local opt = { noremap = true, silent = true }
 
 	local mappings = {
 		{ mode = "i", key = "jk", map = "<ESC>", enabled = true },
@@ -23,7 +23,7 @@ function M.Config()
 
 	for _, map in ipairs(mappings) do
 		if map.enabled then
-			keymap.set(map.mode, map.key, map.map)
+			keymap.set(map.mode, map.key, map.map, map.opt or opt)
 		end
 	end
 end
