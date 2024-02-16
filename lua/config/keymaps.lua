@@ -8,16 +8,16 @@ function M.Config()
 	local mappings = {
 		{ mode = "i", key = "jk", map = "<ESC>", enabled = true },
 		{ mode = "v", key = "v", map = "<ESC>", enabled = true },
+		{ mode = "n", key = "<leader>q", map = ":q<CR>", enabled = true },
+		{ mode = "n", key = "<leader>w", map = "<C-W><C-W>", enabled = true },
 		{ mode = "n", key = "<leader>ff", map = ":Telescope find_files<CR>", enabled = true },
 		{ mode = "n", key = "<leader>fo", map = ":Telescope oldfiles<CR>", enabled = true },
-		{ mode = "n", key = "<leader>q", map = ":q<CR>", enabled = true },
 		{ mode = "n", key = "<leader>ft", map = ":Telescope treesitter<CR>", enabled = true },
+		{ mode = "n", key = "<leader>fm", map = ":Telescope noice<CR>", enabled = true },
 		{ mode = "n", key = "<leader>e", map = ":NvimTreeToggle<CR>", enabled = true },
 		{ mode = "n", key = "<leader>i", map = ":PackerSync<CR>", enabled = true },
 		{ mode = "n", key = "<leader>u", map = ":PackerUpdate<CR>", enabled = true },
 		{ mode = "n", key = "<leader>n", map = ":PackerClean<CR>", enabled = true },
-		{ mode = "n", key = "<leader>w", map = "<C-W><C-W>", enabled = true },
-		{ mode = "n", key = "<leader>rc", map = ":RunClose<CR>", enabled = true },
 		{ mode = "n", key = "<leader>nh", map = ":set nohlsearch<CR>", enabled = true },
 	}
 
