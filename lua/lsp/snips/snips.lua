@@ -11,6 +11,7 @@ function M.Config()
 	require("lsp.snips.conf.typescript_conf")
 	require("lsp.snips.conf.lua_snip")
 	require("lsp.snips.conf.java_snip")
+	require("lsp.snips.conf.python_snip")
 end
 
 return M
