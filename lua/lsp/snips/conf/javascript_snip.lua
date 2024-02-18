@@ -15,5 +15,21 @@ return {
 				}
 			)
 		),
+		ls.snippet(
+			"rfc",
+			fmt(
+				[[
+      import React from "react"
+
+      export default function {} {{
+        {}
+      }}
+    ]],
+				{
+					ls.insert_node(1),
+					ls.insert_node(2),
+				}
+			)
+		),
 	}),
 }
