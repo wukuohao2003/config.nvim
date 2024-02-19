@@ -57,8 +57,8 @@ function M.Config()
 		}),
 		formatting = {
 			fields = {
-				"kind",
 				"abbr",
+				"kind",
 				"menu",
 			},
 			format = function(entry, vim_item)

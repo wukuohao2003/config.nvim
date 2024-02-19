@@ -20,16 +20,16 @@ function M.Config()
 		},
 	})
 
-	require("lsp.mason.config.lua_conf").LuaLSP()
-	require("lsp.mason.config.json_conf").JsonLSP()
-	require("lsp.mason.config.clangd_conf").ClangdLSP()
-	require("lsp.mason.config.css_conf").CssLSP()
-	require("lsp.mason.config.emmet_conf").EmmetLSP()
-	require("lsp.mason.config.html_conf").HtmlLSP()
-	require("lsp.mason.config.python_conf").PythonLSP()
-	require("lsp.mason.config.typescript_conf").TypeScriptLSP()
-	require("lsp.mason.config.vue_conf").VueLSP()
-	require("lsp.mason.config.java_conf").JavaLSP()
+	require("lsp.mason.conf.lua_conf").LuaLSP()
+	require("lsp.mason.conf.json_conf").JsonLSP()
+	require("lsp.mason.conf.clangd_conf").ClangdLSP()
+	require("lsp.mason.conf.css_conf").CssLSP()
+	require("lsp.mason.conf.emmet_conf").EmmetLSP()
+	require("lsp.mason.conf.html_conf").HtmlLSP()
+	require("lsp.mason.conf.python_conf").PythonLSP()
+	require("lsp.mason.conf.typescript_conf").TypeScriptLSP()
+	require("lsp.mason.conf.vue_conf").VueLSP()
+	require("lsp.mason.conf.java_conf").JavaLSP()
 end
 
 return M
