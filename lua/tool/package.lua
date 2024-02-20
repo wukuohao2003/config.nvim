@@ -138,6 +138,8 @@ function M.Config()
 			},
 		})
 
+		-- ChatGPT
+
 		if packer_bootstrap then
 			require("packer").sync()
 		end

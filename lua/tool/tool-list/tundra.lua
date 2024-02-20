@@ -35,6 +35,7 @@ function M.Config()
 			gitsigns = true,
 			neogit = true,
 			textfsm = true,
+			chatgpt = true,
 		},
 	})
 end
