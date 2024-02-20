@@ -27,7 +27,23 @@ function M.Config()
 			},
 		},
 		sections = {
-			lualine_a = { "mode" },
+			lualine_a = {},
+			lualine_b = {},
+			lualine_c = {},
+			lualine_x = {},
+			lualine_y = {},
+			lualine_z = {},
+		},
+		inactive_sections = {
+			lualine_a = {},
+			lualine_b = {},
+			lualine_c = {},
+			lualine_x = {},
+			lualine_y = {},
+			lualine_z = {},
+		},
+		tabline = {
+			lualine_a = {},
 			lualine_b = {
 				"branch",
 				"diff",
@@ -49,7 +65,7 @@ function M.Config()
 						info = "DiagnosticInfo",
 						hint = "DiagnosticHint",
 					},
-					symbols = { error = "  ", warn = "  ", info = "  ", hint = "  " },
+					symbols = { error = "  ", warn = "  ", info = " ", hint = "  " },
 					colored = true,
 					update_in_insert = true,
 					always_visible = true,
@@ -64,23 +80,7 @@ function M.Config()
 					icon = { align = "right" },
 				},
 			},
-			lualine_z = { "mode" },
-		},
-		inactive_sections = {
-			lualine_a = {},
-			lualine_b = {},
-			lualine_c = { "filename" },
-			lualine_x = { "location" },
-			lualine_y = {},
 			lualine_z = {},
-		},
-		tabline = {
-			lualine_a = { "mode" },
-			lualine_b = {},
-			lualine_c = {},
-			lualine_x = {},
-			lualine_y = {},
-			lualine_z = { "mode" },
 		},
 	})
 end
