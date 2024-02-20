@@ -24,12 +24,6 @@ function M.Config()
 			extensions = {},
 			sorting_strategy = "ascending",
 		},
-		pickers = {
-			oldfiles = {
-				theme = "dropdown",
-				previewer = false,
-			},
-		},
 	})
 end
 

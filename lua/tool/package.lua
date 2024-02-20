@@ -129,7 +129,7 @@ function M.Config()
 			"xiyaowong/transparent.nvim",
 		})
 
-		-- hidden command
+		-- prettier command
 		use({
 			"folke/noice.nvim",
 			requires = {
@@ -137,8 +137,6 @@ function M.Config()
 				"rcarriga/nvim-notify",
 			},
 		})
-
-		-- ChatGPT
 
 		if packer_bootstrap then
 			require("packer").sync()
