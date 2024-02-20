@@ -14,6 +14,7 @@ local modules = {
 	{ moduleName = "tool.tool-list.notify", enabled = true },
 	{ moduleName = "tool.tool-list.tundra", enabled = true },
 	{ moduleName = "tool.tool-list.autopairs", enabled = true },
+	{ moduleName = "tool.tool-list.commenter", enabled = true },
 	{ moduleName = "lsp.mason.mason", enabled = true },
 	{ moduleName = "lsp.lsp", enabled = true },
 	{ moduleName = "lsp.snips.snips", enabled = true },

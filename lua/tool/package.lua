@@ -64,8 +64,9 @@ function M.Config()
 		})
 
 		-- code explanatory note
+
 		use({
-			"preservim/nerdcommenter",
+			"numToStr/Comment.nvim",
 		})
 
 		-- file manage
