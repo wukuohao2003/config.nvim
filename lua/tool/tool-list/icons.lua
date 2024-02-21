@@ -14,7 +14,7 @@ function M.Config()
 		js = { icon = "", color = "#f6f5bd", name = "js" },
 		ts = { icon = "", color = "#c0fbfd", name = "ts" },
 		vue = { icon = "", color = "#bcfdde", name = "vue" },
-		css = { icon = "", color = "#c0fbfd", name = "css" },
+		css = { icon = "", color = "#ffc0b6", name = "css" },
 		html = { icon = "", color = "#dae0ff", name = "html" },
 		lua = { icon = "", color = "#c0fbfd", name = "lua" },
 		mov = { icon = "󰿎", color = "#dae0ff", name = "mov" },
