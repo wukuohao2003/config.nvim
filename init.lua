@@ -1,7 +1,7 @@
 local modules = {
 	{ moduleName = "conf.commands", enabled = true },
 	{ moduleName = "conf.keymaps", enabled = true },
-	{ moduleName = "conf.settings", enabled = true },
+	{ moduleName = "conf.custom", enabled = true },
 	{ moduleName = "tool.package", enabled = true },
 	{ moduleName = "tool.tool-list.icons", enabled = true },
 	{ moduleName = "tool.tool-list.lualine", enabled = true },

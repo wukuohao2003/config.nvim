@@ -63,7 +63,7 @@ function M.Config()
 		["package.json"] = { icon = "", color = "#c0fbfd", name = "package" },
 		["package.lua"] = { icon = "󱑢", color = "#dae0ff", name = "pkg_installer" },
 		["commands.lua"] = { icon = "󰘳", color = "#dae0ff", name = "autocommands" },
-		["settings.lua"] = { icon = "󰬎", color = "#dae0ff", name = "globalsettings" },
+		["custom.lua"] = { icon = "󰬎", color = "#dae0ff", name = "globalsettings" },
 		["keymaps.lua"] = { icon = "󱕵", color = "#dae0ff", name = "keymaps" },
 		["www"] = { icon = "󰇧", color = "#ffc06b", name = "network" },
 		["LICENSE"] = { icon = "", color = "#dae0ff", name = "LICENSE" },

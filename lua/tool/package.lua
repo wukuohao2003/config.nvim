@@ -72,9 +72,6 @@ function M.Config()
 		-- file manage
 		use({
 			"nvim-tree/nvim-tree.lua",
-			requires = {
-				"nvim-tree/nvim-web-devicons",
-			},
 			tag = "nightly",
 		})
 
@@ -92,14 +89,15 @@ function M.Config()
 			"windwp/nvim-autopairs",
 		})
 
+		-- icons
+		use({
+			"nvim-tree/nvim-web-devicons",
+		})
+
 		-- status line
 		use({
 			"nvim-lualine/lualine.nvim",
-			requires = {
-				"nvim-tree/nvim-web-devicons",
-				"WhoIsSethDaniel/lualine-lsp-progress.nvim",
-				opt = true,
-			},
+			"WhoIsSethDaniel/lualine-lsp-progress.nvim",
 		})
 
 		-- code hllight
@@ -110,10 +108,8 @@ function M.Config()
 		-- telescope
 		use({
 			"nvim-telescope/telescope.nvim",
-			requires = {
-				"nvim-lua/plenary.nvim",
-				"p00f/nvim-ts-rainbow",
-			},
+			"nvim-lua/plenary.nvim",
+			"p00f/nvim-ts-rainbow",
 		})
 
 		-- smooth scroll
@@ -131,13 +127,19 @@ function M.Config()
 			"xiyaowong/transparent.nvim",
 		})
 
+		-- noice ui
+		use({
+			"MunifTanjim/nui.nvim",
+		})
+
+		-- notify
+		use({
+			"rcarriga/nvim-notify",
+		})
+
 		-- prettier command
 		use({
 			"folke/noice.nvim",
-			requires = {
-				"MunifTanjim/nui.nvim",
-				"rcarriga/nvim-notify",
-			},
 		})
 
 		if packer_bootstrap then
