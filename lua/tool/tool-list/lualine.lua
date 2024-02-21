@@ -21,9 +21,9 @@ function M.Config()
 			always_divide_middle = true,
 			globalstatus = true,
 			refresh = {
-				statusline = 1000,
-				tabline = 1000,
-				winbar = 1000,
+				statusline = 1,
+				tabline = 1,
+				winbar = 1,
 			},
 		},
 		sections = {
@@ -53,11 +53,22 @@ function M.Config()
 					icon = { align = "left" },
 				},
 			},
-			lualine_c = { { "filename", path = 0 } },
+			lualine_c = {
+				{
+					"filename",
+					path = 0,
+					symbols = {
+						modified = "󰬋",
+						readonly = "󰬞",
+						unnamed = "󰅰",
+						newfile = "󰎔",
+					},
+				},
+			},
 			lualine_x = {
 				{
 					"diagnostics",
-					sources = { "nvim_diagnostic", "coc" },
+					sources = { "nvim_diagnostic", "nvim_lsp" },
 					sections = { "error", "warn", "info", "hint" },
 					diagnostics_color = {
 						error = "DiagnosticError",
@@ -65,20 +76,14 @@ function M.Config()
 						info = "DiagnosticInfo",
 						hint = "DiagnosticHint",
 					},
-					symbols = { error = "  ", warn = "  ", info = " ", hint = "  " },
+					symbols = { error = "󰬌 ", warn = "󰬞 ", info = "󰬐 ", hint = "󰬏 " },
 					colored = true,
 					update_in_insert = true,
 					always_visible = true,
 				},
 			},
 			lualine_y = {
-				"branch",
-				"diff",
-				"filesize",
-				{
-					"filetype",
-					icon = { align = "right" },
-				},
+				{ "datetime", style = "%Y-%m-%d %H:%M:%S" },
 			},
 			lualine_z = {},
 		},

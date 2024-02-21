@@ -97,6 +97,7 @@ function M.Config()
 			"nvim-lualine/lualine.nvim",
 			requires = {
 				"nvim-tree/nvim-web-devicons",
+				"WhoIsSethDaniel/lualine-lsp-progress.nvim",
 				opt = true,
 			},
 		})
