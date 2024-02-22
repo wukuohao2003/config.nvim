@@ -21,12 +21,13 @@ return {
 				[[
       import React from "react"
 
-      export default function {} {{
-        {}
+      export default function {}() {{
+        return <div className="{}">{}</div>
       }}
     ]],
 				{
 					ls.insert_node(1),
+					rep(1),
 					ls.insert_node(2),
 				}
 			)

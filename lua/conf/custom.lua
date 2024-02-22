@@ -23,7 +23,7 @@ function M.Config()
 		{ type = "option", method = "updatetime", value = 50 },
 		{ type = "option", method = "signcolumn", value = "yes" },
 		{ type = "option", method = "confirm", value = false },
-		{ type = "option", method = "pumheight", value = 20 },
+		{ type = "option", method = "pumheight", value = 10 },
 		{ type = "option", method = "pumwidth", value = 10 },
 		{ type = "option", method = "autoread", value = true },
 		{ type = "option", method = "showmode", value = false },

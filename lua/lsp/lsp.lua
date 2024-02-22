@@ -63,11 +63,11 @@ function M.Config()
 			format = function(entry, vim_item)
 				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
 				vim_item.menu = ({
+					luasnip = "  [LuaSnip]",
 					nvim_lsp = "  [LSP]",
-					lua_cmp = "  [LuaCmp]",
 					buffer = "  [BUFFER]",
 					path = "  [PATH]",
-					luasnip = "  [LuaSnip]",
+					lua_cmp = "  [LuaCmp]",
 				})[entry.source.name]
 				return vim_item
 			end,
