@@ -80,10 +80,6 @@ function M.Config()
 			"sam4llis/nvim-tundra",
 		})
 
-		use({
-			"catppuccin/nvim",
-		})
-
 		-- autpairs
 		use({
 			"windwp/nvim-autopairs",

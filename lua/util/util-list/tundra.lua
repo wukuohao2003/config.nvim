@@ -25,17 +25,10 @@ function M.Config()
 		},
 		plugins = {
 			lsp = true,
-			semantic_tokens = true,
 			treesitter = true,
 			telescope = false,
 			nvimtree = true,
 			cmp = true,
-			context = true,
-			dbui = true,
-			gitsigns = true,
-			neogit = true,
-			textfsm = true,
-			chatgpt = true,
 		},
 	})
 end

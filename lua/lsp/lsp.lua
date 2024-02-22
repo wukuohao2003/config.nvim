@@ -21,7 +21,6 @@ function M.Config()
 			end,
 		},
 		window = {
-
 			completion = cmp.config.window.bordered(),
 			documentation = cmp.config.window.bordered(),
 		},
@@ -64,11 +63,11 @@ function M.Config()
 			format = function(entry, vim_item)
 				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
 				vim_item.menu = ({
-					nvim_lsp = "  LSP",
-					lua_cmp = "  LuaCmp",
-					buffer = "  BUFFER",
-					path = "  PATH",
-					luasnip = "  LuaSnip",
+					nvim_lsp = "  [LSP]",
+					lua_cmp = "  [LuaCmp]",
+					buffer = "  [BUFFER]",
+					path = "  [PATH]",
+					luasnip = "  [LuaSnip]",
 				})[entry.source.name]
 				return vim_item
 			end,
@@ -78,20 +77,32 @@ function M.Config()
 		},
 	})
 
-	cmp.setup.cmdline({ "/", "?" }, {
+	cmp.setup.cmdline({ "/", "?", ":" }, {
 		mapping = cmp.mapping.preset.cmdline(),
 		sources = {
 			{ name = "buffer" },
-		},
-	})
-
-	cmp.setup.cmdline(":", {
-		mapping = cmp.mapping.preset.cmdline(),
-		sources = cmp.config.sources({
 			{ name = "path" },
-		}, {
 			{ name = "cmdline" },
-		}),
+		},
+		formatting = {
+			fields = {
+				"abbr",
+				"kind",
+				"menu",
+			},
+			format = function(entry, vim_item)
+				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
+				vim_item.menu = ({
+					buffer = "  [BUFFER]",
+					path = "  [PATH]",
+					cmdline = "  [CmdLine]",
+				})[entry.source.name]
+				return vim_item
+			end,
+		},
+		experimental = {
+			ghost_text = true,
+		},
 	})
 end
 
