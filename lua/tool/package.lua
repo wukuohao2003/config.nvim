@@ -142,6 +142,11 @@ function M.Config()
 			"folke/noice.nvim",
 		})
 
+		use({
+			"tpope/vim-dadbod",
+			"kristijanhusak/vim-dadbod-ui",
+		})
+
 		if packer_bootstrap then
 			require("packer").sync()
 		end
