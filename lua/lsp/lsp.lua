@@ -85,11 +85,7 @@ function M.Config()
 			{ name = "cmdline" },
 		},
 		formatting = {
-			fields = {
-				"abbr",
-				"kind",
-				"menu",
-			},
+			fields = { "abbr", "kind", "menu" },
 			format = function(entry, vim_item)
 				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
 				vim_item.menu = ({
