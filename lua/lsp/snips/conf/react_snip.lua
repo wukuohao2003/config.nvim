@@ -3,6 +3,7 @@ local rep = require("luasnip.extras").rep
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
+	-- ts
 	ls.add_snippets("typescriptreact", {
 		ls.snippet(
 			--
@@ -36,6 +37,7 @@ return {
 		),
 		--
 	}),
+	-- js
 	ls.add_snippets("javascriptreact", {
 		--
 		ls.snippet(
