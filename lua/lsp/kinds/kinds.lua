@@ -2,7 +2,7 @@ local M = {}
 
 M.kinds = {
 	Text = "  󱄽  ",
-	Class = "    ",
+	Class = "    ",
 	Function = "  󰡱  ",
 	Constructor = "  󱌣  ",
 	Field = "    ",
