@@ -55,13 +55,10 @@ function M.Config()
 			{ name = "lua_cmp" },
 		}),
 		formatting = {
-			fields = {
-				"abbr",
-				"kind",
-				"menu",
-			},
+			fields = { "kind", "abbr", "menu" },
 			format = function(entry, vim_item)
-				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
+				vim_item.kind =
+					string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind .. "  ")
 				vim_item.menu = ({
 					luasnip = "   [LuaSnip]",
 					nvim_lsp = "  [LSP]",
@@ -85,9 +82,10 @@ function M.Config()
 			{ name = "cmdline" },
 		},
 		formatting = {
-			fields = { "abbr", "kind", "menu" },
+			fields = { "kind", "abbr", "menu" },
 			format = function(entry, vim_item)
-				vim_item.kind = string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind)
+				vim_item.kind =
+					string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind .. "  ")
 				vim_item.menu = ({
 					buffer = "  [BUFFER]",
 					path = "  [PATH]",
