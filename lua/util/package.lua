@@ -123,7 +123,7 @@ function M.Config()
 			"xiyaowong/transparent.nvim",
 		})
 
-		-- noice ui
+		-- ui
 		use({
 			"MunifTanjim/nui.nvim",
 		})
