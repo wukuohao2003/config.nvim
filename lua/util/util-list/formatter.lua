@@ -21,7 +21,6 @@ function M.Config()
 			scss = { require("formatter.filetypes.css").prettier },
 			less = { require("formatter.filetypes.css").prettier },
 			java = { require("formatter.filetypes.java").googlejavaformat },
-			markdow = { require("formatter.filetypes.markdown").prettier },
 			lua = { require("formatter.filetypes.lua").stylua },
 			python = { require("formatter.filetypes.python").autopep8 },
 			markdown = { require("formatter.filetypes.markdown").prettier },
