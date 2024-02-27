@@ -2,7 +2,7 @@ local modules = {
 	{ moduleName = "conf.commands", enabled = true },
 	{ moduleName = "conf.keymaps", enabled = true },
 	{ moduleName = "conf.custom", enabled = true },
-	{ moduleName = "util.package", enabled = true },
+	{ moduleName = "util.util-installer", enabled = true },
 	{ moduleName = "util.util-list.icons", enabled = true },
 	{ moduleName = "util.util-list.lualine", enabled = true },
 	{ moduleName = "util.util-list.nvim-tree", enabled = true },
