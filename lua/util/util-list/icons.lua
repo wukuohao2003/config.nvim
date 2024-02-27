@@ -39,7 +39,7 @@ function M.Config()
 		jade = { icon = "", color = "#dae0ff", name = "jade" },
 		log = { icon = "󱂅", color = "#c0fbfd", name = "log" },
 		scss = { icon = "", color = "#ffc0b6", name = "scss" },
-		less = { icon = "", color = "#ffc0b6", name = "less" },
+		less = { icon = "󰅯", color = "#ffc0b6", name = "less" },
 		snippets = { icon = "", color = "#dae0ff", name = "snippets" },
 		gif = { icon = "󰵸", color = "#dae0ff", name = "gif" },
 		sh = { icon = "", color = "#f6f5bd", name = "sh" },
