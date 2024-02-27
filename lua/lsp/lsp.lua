@@ -23,7 +23,7 @@ function M.Config()
 		window = {
 			completion = cmp.config.window.bordered(),
 			documentation = cmp.config.window.bordered(),
-r	},
+		},
 		mapping = cmp.mapping.preset.insert({
 			["<Tab>"] = cmp.mapping(function(callback)
 				if cmp.visible() then
@@ -60,7 +60,7 @@ r	},
 				vim_item.kind =
 					string.format("%s %s", require("lsp.kinds.kinds").kinds[vim_item.kind], vim_item.kind .. "  ")
 				vim_item.menu = ({
-					luasnip = "   [LuaSnip]",
+					luasnip = "  [LuaSnip]",
 					nvim_lsp = "  [LSP]",
 					buffer = "  [BUFFER]",
 					path = "  [PATH]",
