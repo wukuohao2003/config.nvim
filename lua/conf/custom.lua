@@ -3,7 +3,7 @@ local M = {}
 function M.Config()
 	local custom = {
 		{ type = "global", method = "mapleader", value = " " },
-		{ type = "global", method = "mouse", value = "nv" },
+		{ type = "option", method = "mouse", value = "" },
 		{ type = "option", method = "relativenumber", value = true },
 		{ type = "option", method = "number", value = true },
 		{ type = "option", method = "numberwidth", value = 4 },

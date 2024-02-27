@@ -23,7 +23,7 @@ function M.Config()
 		window = {
 			completion = cmp.config.window.bordered(),
 			documentation = cmp.config.window.bordered(),
-		},
+r	},
 		mapping = cmp.mapping.preset.insert({
 			["<Tab>"] = cmp.mapping(function(callback)
 				if cmp.visible() then
