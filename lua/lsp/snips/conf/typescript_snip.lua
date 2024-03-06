@@ -27,5 +27,23 @@ return {
 				}
 			)
 		),
+		ls.snippet(
+			"rnc",
+			fmt(
+				[[
+        import {{ View }} from "react-native" 
+
+        function {}() {{
+          return <View></View>
+        }}
+
+        export default {}
+      ]],
+				{
+					ls.insert_node(1),
+					rep(1),
+				}
+			)
+		),
 	}),
 }
