@@ -17,17 +17,6 @@ return {
 			)
 		),
 		ls.snippet(
-			"=>",
-			fmt(
-				[[
-        () => {{{}}}
-      ]],
-				{
-					ls.insert_node(1),
-				}
-			)
-		),
-		ls.snippet(
 			"rnc",
 			fmt(
 				[[
@@ -42,6 +31,23 @@ return {
 				{
 					ls.insert_node(1),
 					rep(1),
+				}
+			)
+		),
+		ls.snippet(
+			"rfc",
+			fmt(
+				[[
+        import React from 'react'
+
+        function {}() {{
+          return <div className={}>{}</div>
+        }}
+      ]],
+				{
+					ls.insert_node(1),
+					rep(1),
+					ls.insert_node(2),
 				}
 			)
 		),
