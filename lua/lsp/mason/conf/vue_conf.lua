@@ -1,7 +1,7 @@
 local M = {}
 
 function M.VueLSP()
-	require("lspconfig").vuels.setup({})
+	require("lspconfig").volar.setup({})
 end
 
 return M

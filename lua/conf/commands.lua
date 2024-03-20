@@ -7,7 +7,7 @@ function M.Config()
 			pattern = { "*" },
 			command = "silent! write! | Format",
 			enable = true,
-			msg = "",
+      msg = "",
 		},
 		{
 			mode = { "BufNewFile", "BufEnter" },
