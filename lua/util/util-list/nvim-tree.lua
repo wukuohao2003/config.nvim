@@ -26,12 +26,6 @@ function M.Config()
 			dotfiles = true,
 		},
 		view = {
-			mappings = {
-				list = {
-					{ key = "v", action = "vsplit" },
-					{ key = "s", action = "split" },
-				},
-			},
 			float = {
 				enable = false,
 				quit_on_focus_loss = true,
