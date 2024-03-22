@@ -26,6 +26,7 @@ function M.Config()
 			dotfiles = true,
 		},
 		view = {
+			width = 20,
 			float = {
 				enable = false,
 				quit_on_focus_loss = true,
