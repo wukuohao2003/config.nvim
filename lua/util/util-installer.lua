@@ -32,6 +32,9 @@ function M.Config()
 			moved_sym = "→",
 			header_sym = "━",
 		},
+		git = {
+			default_url_format = "git@github.com:%s",
+		},
 	})
 
 	return packer.startup(function(use)
@@ -70,10 +73,7 @@ function M.Config()
 		})
 
 		-- file manage
-		use({
-			"nvim-tree/nvim-tree.lua",
-			tag = "nightly",
-		})
+		use({})
 
 		-- color scheme
 		use({
