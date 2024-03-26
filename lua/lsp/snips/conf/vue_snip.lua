@@ -5,12 +5,20 @@ local fmt = require("luasnip.extras.fmt").fmt
 ls.add_snippets("vue", {
 	ls.snippet(
 		--
-		"tmps",
+		"sts",
 		fmt(
 			[[
-        <template></template>
+        <script></script
+
+        <template>
+          <div>{}</div
+        </template>
+
+        <style lang="scss" scoped></style>
       ]],
-			{}
+			{
+				ls.insert_node(1),
+			}
 		)
 	),
 })
