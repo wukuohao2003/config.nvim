@@ -11,8 +11,10 @@ function M.Config()
 		options = {
 			icons_enabled = true,
 			theme = "auto",
-			component_separators = { left = " ", right = " " },
-			section_separators = { left = " ", right = "  " },
+			-- component_separators = { left = " ", right = " " },
+			-- section_separators = { left = "  ", right = "  " },
+			section_separators = { left = "", right = "" },
+			component_separators = { left = "", right = "" },
 			always_divide_middle = true,
 			globalstatus = true,
 			refresh = {
@@ -29,21 +31,11 @@ function M.Config()
 			lualine_y = {},
 			lualine_z = {},
 		},
-		inactive_sections = {
-			lualine_a = {},
-			lualine_b = {},
-			lualine_c = {},
-			lualine_x = {},
-			lualine_y = {},
-			lualine_z = {},
-		},
-
 		tabline = {
 			lualine_a = {},
 			lualine_b = {
 				"branch",
 				"diff",
-				"filesize",
 				{
 					"filetype",
 					icon = { align = "left" },
@@ -64,7 +56,7 @@ function M.Config()
 			lualine_x = {
 				{
 					"diagnostics",
-					sources = { "nvim_diagnostic", "nvim_lsp" },
+					sources = { "nvim_lsp" },
 					sections = { "error", "warn", "info", "hint" },
 					diagnostics_color = {
 						error = "DiagnosticError",
