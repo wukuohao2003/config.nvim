@@ -9,7 +9,7 @@ end
 
 function M.Config()
 	require("notify").setup({
-		background_colour = "#000000",
+		background_colour = "none",
 	})
 
 	notify.setup({
@@ -21,12 +21,12 @@ function M.Config()
 				col = "50%",
 			},
 			format = {
-				cmdline = { icon = " " },
+				cmdline = { icon = " " },
 				search_down = { icon = "󰁈 " },
 				search_up = { icon = " " },
-				filter = { icon = "󰈲 " },
-				help = { icon = "󰾚 " },
-				input = { icon = "󱡫 " },
+				filter = { icon = "󰤶 " },
+				help = { icon = "󰮥 " },
+				input = { icon = "󰡁 " },
 				lua = { icon = " " },
 			},
 		},

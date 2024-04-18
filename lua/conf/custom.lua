@@ -27,7 +27,7 @@ function M.Config()
 		{ type = "option", method = "pumwidth", value = 10 },
 		{ type = "option", method = "autoread", value = true },
 		{ type = "option", method = "showmode", value = false },
-		{ type = "color", method = "colorscheme", value = "catppuccin" },
+		{ type = "colors", method = "colorscheme", value = "catppuccin" },
 	}
 
 	for _, item in ipairs(custom) do
@@ -35,7 +35,7 @@ function M.Config()
 			vim.g[item.method] = item.value
 		elseif item.type == "option" then
 			vim.opt[item.method] = item.value
-		elseif item.type == "color" then
+		elseif item.type == "colors" then
 			vim.cmd(string.format("%s %s", item.method, item.value))
 		end
 	end

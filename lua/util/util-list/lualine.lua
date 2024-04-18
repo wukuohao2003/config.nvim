@@ -10,7 +10,7 @@ function M.Config()
 	lul.setup({
 		options = {
 			icons_enabled = true,
-			theme = "auto",
+			theme = "catppuccin",
 			-- component_separators = { left = " ", right = " " },
 			-- section_separators = { left = "  ", right = "  " },
 			section_separators = { left = "", right = "" },
@@ -71,7 +71,7 @@ function M.Config()
 				},
 			},
 			lualine_y = {
-				{ "datetime", style = "%Y-%m-%d %H:%M:%S" },
+				{ "datetime", style = "%m|%d|%Y %H:%M:%S" },
 			},
 			lualine_z = {},
 		},
