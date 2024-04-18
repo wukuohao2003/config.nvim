@@ -73,7 +73,9 @@ function M.Config()
 		})
 
 		-- file manage
-		use({})
+		use({
+			"nvim-tree/nvim-tree.lua",
+		})
 
 		-- color scheme
 		use({
