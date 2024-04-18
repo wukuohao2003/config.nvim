@@ -1,5 +1,5 @@
 local M = {}
-local status, ls = pcall(require, "luasnip")
+local status, _ = pcall(require, "luasnip")
 
 if not status then
 	vim.notify("luasnip is not found ...")

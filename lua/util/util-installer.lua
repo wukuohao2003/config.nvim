@@ -82,6 +82,11 @@ function M.Config()
 			"sam4llis/nvim-tundra",
 		})
 
+		use({
+			"catppuccin/nvim",
+			as = "catppuccin",
+		})
+
 		-- autpairs
 		use({
 			"windwp/nvim-autopairs",

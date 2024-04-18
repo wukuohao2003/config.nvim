@@ -27,7 +27,7 @@ function M.Config()
 		{ type = "option", method = "pumwidth", value = 10 },
 		{ type = "option", method = "autoread", value = true },
 		{ type = "option", method = "showmode", value = false },
-		{ type = "color", method = "colorscheme", value = "tundra" },
+		{ type = "color", method = "colorscheme", value = "catppuccin" },
 	}
 
 	for _, item in ipairs(custom) do

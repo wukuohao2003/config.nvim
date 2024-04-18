@@ -10,7 +10,7 @@ function M.Config()
 	lul.setup({
 		options = {
 			icons_enabled = true,
-			theme = "tundra",
+			theme = "auto",
 			component_separators = { left = " ", right = " " },
 			section_separators = { left = " ", right = "  " },
 			always_divide_middle = true,

@@ -1,5 +1,15 @@
-local status, ntree = pcall(require, "nvim-tree")
 local M = {}
+local status, ntree = pcall(require, "nvim-tree")
+
+-- 获取屏幕尺寸
+local screen_width = vim.api.nvim_get_option("columns")
+local screen_height = vim.api.nvim_get_option("lines")
+
+-- 计算浮动窗口的位置
+local float_width = math.floor(vim.api.nvim_win_get_width(0) / 1.5)
+local float_height = math.floor(vim.api.nvim_win_get_height(0) / 1.5)
+local float_col = math.floor((screen_width - float_width) / 2)
+local float_row = math.floor((screen_height - float_height) / 2)
 
 if not status then
 	vim.notify("nvim-tree is not found ...")
@@ -28,15 +38,15 @@ function M.Config()
 		view = {
 			width = 20,
 			float = {
-				enable = false,
+				enable = true,
 				quit_on_focus_loss = true,
 				open_win_config = {
 					relative = "editor",
 					border = "rounded",
-					width = 120,
-					height = 30,
-					col = 30,
-					row = 6,
+					width = float_width,
+					height = float_height,
+					col = float_col,
+					row = float_row,
 				},
 			},
 		},
