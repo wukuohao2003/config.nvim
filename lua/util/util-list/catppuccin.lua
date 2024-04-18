@@ -13,8 +13,8 @@ function M.Config()
 			light = "latte",
 			dark = "mocha",
 		},
-		transparent_background = false, -- disables setting the background color.
-		show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+		transparent_background = false,
+		show_end_of_buffer = false,
 		term_colors = true,
 		dim_inactive = {
 			enabled = false,

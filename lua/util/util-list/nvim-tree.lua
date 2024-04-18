@@ -74,7 +74,7 @@ function M.Config()
 						unmerged = "",
 						renamed = "󰴒",
 						untracked = "",
-						deleted = "󱂥",
+						deleted = "󱂦",
 						ignored = "◌",
 					},
 				},

@@ -9,7 +9,7 @@ end
 
 function M.Config()
 	require("notify").setup({
-		background_colour = "none",
+		background_colour = "#FF0000",
 	})
 
 	notify.setup({

@@ -25,12 +25,9 @@ function M.Config()
 			open_fn = function()
 				return require("packer.util").float({ border = "rounded" })
 			end,
-			working_sym = "󱥸",
-			error_sym = "",
-			done_sym = "󰩐",
-			removed_sym = "󰛌",
-			moved_sym = "→",
-			header_sym = "━",
+			working_sym = "󰏔",
+			error_sym = "󱧙",
+			done_sym = "󰏓",
 		},
 		git = {
 			default_url_format = "git@github.com:%s",
@@ -78,9 +75,6 @@ function M.Config()
 		})
 
 		-- color scheme
-		use({
-			"sam4llis/nvim-tundra",
-		})
 
 		use({
 			"catppuccin/nvim",

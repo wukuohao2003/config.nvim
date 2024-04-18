@@ -71,7 +71,7 @@ function M.Config()
 				},
 			},
 			lualine_y = {
-				{ "datetime", style = "%m|%d|%Y %H:%M:%S" },
+				{ "datetime", style = "%m/%d/%Y %H:%M:%S" },
 			},
 			lualine_z = {},
 		},

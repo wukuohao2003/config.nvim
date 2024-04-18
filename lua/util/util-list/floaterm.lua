@@ -37,6 +37,11 @@ function M.Config()
 			border = "rounded",
 			winlend = 0,
 		},
+		autochdir = true,
+		shell = "powershell",
+		winbar = {
+			enabled = false,
+		},
 	})
 end
 
