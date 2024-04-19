@@ -57,7 +57,6 @@ function M.Config()
 					default = "󱧶",
 					symlink = "󰈝",
 					bookmark = "󰩋",
-					modified = "",
 					folder = {
 						arrow_closed = "",
 						arrow_open = "",

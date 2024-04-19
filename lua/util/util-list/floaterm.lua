@@ -39,9 +39,6 @@ function M.Config()
 		},
 		autochdir = true,
 		shell = "powershell",
-		winbar = {
-			enabled = false,
-		},
 	})
 end
 
