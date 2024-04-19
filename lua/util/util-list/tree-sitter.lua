@@ -37,6 +37,21 @@ function M.Config()
 				"#c5fff3",
 			},
 		},
+		autotag = {
+			enable = true,
+			enable_rename = true,
+			enable_close = true,
+			enable_close_on_slash = true,
+			filetype = {
+				"html",
+				"javascript",
+				"typescript",
+				"javascriptreact",
+				"typescriptreact",
+				"jsx",
+				"tsx",
+			},
+		},
 	})
 end
 

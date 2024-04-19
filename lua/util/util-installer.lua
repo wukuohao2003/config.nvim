@@ -81,11 +81,6 @@ function M.Config()
 			as = "catppuccin",
 		})
 
-		-- autpairs
-		use({
-			"windwp/nvim-autopairs",
-		})
-
 		-- icons
 		use({
 			"nvim-tree/nvim-web-devicons",
@@ -100,13 +95,16 @@ function M.Config()
 		-- code hllight
 		use({
 			"nvim-treesitter/nvim-treesitter",
+			-- plugins
+			"p00f/nvim-ts-rainbow",
+			"windwp/nvim-autopairs",
+			"windwp/nvim-ts-autotag",
 		})
 
 		-- telescope
 		use({
 			"nvim-telescope/telescope.nvim",
 			"nvim-lua/plenary.nvim",
-			"p00f/nvim-ts-rainbow",
 		})
 
 		-- smooth scroll
