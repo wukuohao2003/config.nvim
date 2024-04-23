@@ -29,7 +29,7 @@ end
 
 function M.Config()
 	floaterm.setup({
-		open_mapping = [[<leader>t]],
+		open_mapping = "<leader>ft",
 		size = 20,
 		hide_numbers = true,
 		direction = "float",

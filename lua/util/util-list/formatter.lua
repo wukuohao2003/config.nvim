@@ -24,6 +24,7 @@ function M.Config()
 			lua = { require("formatter.filetypes.lua").stylua },
 			python = { require("formatter.filetypes.python").ruff },
 			markdown = { require("formatter.filetypes.markdown").prettier },
+			go = { require("formatter.filetypes.go").gofumpt },
 		},
 	})
 end
