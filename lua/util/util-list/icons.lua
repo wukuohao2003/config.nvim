@@ -55,6 +55,7 @@ function M.Config()
 		woff = { icon = "", color = "#ffc0b6", name = "woff" },
 		mod = { icon = "󰕏", color = "#ffc0b6", name = "mod" },
 		so = { icon = "", color = "#dae0ff", name = "so" },
+		http = { icon = "󰭄", color = "#ffc0b6", name = "http" },
 		["tsconfig.json"] = { icon = "", color = "#ffc0b6", name = "tsconfig" },
 		[".env"] = { icon = "", color = "#dae0ff", name = "env" },
 		["favicon.ico"] = { icon = "󱞈", color = "#c0fbfd", name = "favicon" },
