@@ -27,4 +27,15 @@ ls.add_snippets("vue", {
 			}
 		)
 	),
+	ls.snippet(
+		"log",
+		fmt(
+			[[
+    console.log({})
+  ]],
+			{
+				ls.insert_node(1),
+			}
+		)
+	),
 })
