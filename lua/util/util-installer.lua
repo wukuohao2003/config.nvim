@@ -92,7 +92,7 @@ function M.Config()
 			"WhoIsSethDaniel/lualine-lsp-progress.nvim",
 		})
 
-		-- code hllight
+		-- code hilight
 		use({
 			"nvim-treesitter/nvim-treesitter",
 			-- plugins
