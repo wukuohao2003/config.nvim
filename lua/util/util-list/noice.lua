@@ -1,18 +1,17 @@
-local status, notify = pcall(require, "noice")
-
 local M = {}
+local status, noice = pcall(require, "noice")
 
 if not status then
-	vim.notify("notify is not found")
+	vim.notify("noice is not found")
 	return
 end
 
 function M.Config()
 	require("notify").setup({
-		background_colour = "#FF0000",
+		background_colour = "#000000",
 	})
 
-	notify.setup({
+	noice.setup({
 		cmdline = {
 			enabled = true,
 			view = "cmdline_popup",
@@ -21,7 +20,7 @@ function M.Config()
 				col = "50%",
 			},
 			format = {
-				cmdline = { icon = " " },
+				cmdline = { icon = " " },
 				search_down = { icon = "󰁈 " },
 				search_up = { icon = " " },
 				filter = { icon = "󰤶 " },
@@ -35,7 +34,7 @@ function M.Config()
 			view = "notify",
 			view_error = "notify",
 			view_warn = "notify",
-			view_history = "notify",
+			view_history = "messages",
 			view_search = "virtualtext",
 		},
 		lsp = {
@@ -43,13 +42,11 @@ function M.Config()
 				enabled = true,
 				format = "lsp_progress",
 				format_done = "lsp_progress_done",
-				throttle = 1000 / 30,
 				view = "cmdline_popup",
 			},
 			message = {
-				enabled = true,
+				enabled = false,
 				view = "notify",
-				opts = {},
 			},
 		},
 		presets = {

@@ -10,7 +10,7 @@ local modules = {
 	{ moduleName = "util.util-list.formatter", enabled = true },
 	{ moduleName = "util.util-list.floaterm", enabled = true },
 	{ moduleName = "util.util-list.transparent", enabled = true },
-	{ moduleName = "util.util-list.notify", enabled = true },
+	{ moduleName = "util.util-list.noice", enabled = true },
 	{ moduleName = "util.util-list.catppuccin", enabled = true },
 	{ moduleName = "util.util-list.autopairs", enabled = true },
 	{ moduleName = "util.util-list.commenter", enabled = true },

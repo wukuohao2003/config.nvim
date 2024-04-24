@@ -7,22 +7,17 @@ if not status then
 	return false
 end
 
-function _LazyGit()
-	local lazygit = Terminal:new({ cmd = "lazygit", hidden = true })
-	lazygit:toggle()
-end
-
-function _Node()
+function Node()
 	local node = Terminal:new({ cmd = "node", hidden = true })
 	node:toggle()
 end
 
-function _Python()
+function Python()
 	local python = Terminal:new({ cmd = "python3", hidden = true })
 	python:toggle()
 end
 
-function _Lua()
+function Lua()
 	local lua = Terminal:new({ cmd = "lua", hidden = true })
 	lua:toggle()
 end
