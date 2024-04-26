@@ -3,6 +3,9 @@ local M = {}
 function M.Config()
 	local custom = {
 		{ type = "global", method = "mapleader", value = " " },
+		{ type = "global", method = "loaded_netrw", value = 1 },
+		{ type = "global", method = "loaded_netrwPlugin", value = 1 },
+		{ type = "global", method = "termguicolors", value = true },
 		{ type = "option", method = "mouse", value = "" },
 		{ type = "option", method = "relativenumber", value = true },
 		{ type = "option", method = "number", value = true },

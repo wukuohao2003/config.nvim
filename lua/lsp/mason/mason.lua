@@ -20,6 +20,7 @@ function M.Config()
 		},
 	})
 
+	require("lsp.mason.conf.vue_conf").VueLSP()
 	require("lsp.mason.conf.lua_conf").LuaLSP()
 	require("lsp.mason.conf.json_conf").JsonLSP()
 	require("lsp.mason.conf.clangd_conf").ClangdLSP()
@@ -28,7 +29,6 @@ function M.Config()
 	require("lsp.mason.conf.html_conf").HtmlLSP()
 	require("lsp.mason.conf.python_conf").PythonLSP()
 	require("lsp.mason.conf.typescript_conf").TypeScriptLSP()
-	require("lsp.mason.conf.vue_conf").VueLSP()
 	require("lsp.mason.conf.java_conf").JavaLSP()
 	require("lsp.mason.conf.go_conf").GoLSP()
 end

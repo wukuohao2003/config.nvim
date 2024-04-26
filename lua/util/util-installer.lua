@@ -105,6 +105,8 @@ function M.Config()
 		use({
 			"nvim-telescope/telescope.nvim",
 			"nvim-lua/plenary.nvim",
+			-- plugins
+			"piersolenski/telescope-import.nvim",
 		})
 
 		-- smooth scroll
