@@ -8,12 +8,12 @@ end
 
 function M.Config()
 	catppuccin.setup({
-		flavour = "auto", -- latte, frappe, macchiato, mocha
-		background = { -- :h background
+		flavour = "auto",
+		background = {
 			light = "latte",
 			dark = "mocha",
 		},
-		transparent_background = false,
+		transparent_background = true,
 		show_end_of_buffer = false,
 		term_colors = true,
 		dim_inactive = {
@@ -56,10 +56,10 @@ function M.Config()
 					information = { "italic" },
 				},
 				underlines = {
-					errors = { "underline" },
-					hints = { "underline" },
-					warnings = { "underline" },
-					information = { "underline" },
+					errors = {},
+					hints = {},
+					warnings = {},
+					information = {},
 				},
 				inlay_hints = {
 					background = true,

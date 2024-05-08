@@ -106,7 +106,6 @@ function M.Config()
 			"nvim-telescope/telescope.nvim",
 			"nvim-lua/plenary.nvim",
 			-- plugins
-			"piersolenski/telescope-import.nvim",
 		})
 
 		-- smooth scroll
@@ -124,7 +123,7 @@ function M.Config()
 			"xiyaowong/transparent.nvim",
 		})
 
-		-- ui
+		-- float window ui
 		use({
 			"MunifTanjim/nui.nvim",
 		})
@@ -137,6 +136,12 @@ function M.Config()
 		-- prettier command
 		use({
 			"folke/noice.nvim",
+		})
+
+		-- database
+		use({
+			"tpope/vim-dadbod",
+			"kristijanhusak/vim-dadbod-ui",
 		})
 
 		if packer_bootstrap then

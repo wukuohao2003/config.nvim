@@ -29,12 +29,12 @@ function M.Config()
 			enable = true,
 			extended_mode = true,
 			colors = {
-				"#ffc0b6",
-				"#bcfdde",
-				"#f6f5bd",
-				"#c0fbfd",
-				"#dae0ff",
-				"#c5fff3",
+				"#ffd6af",
+				"#fff4af",
+				"#dcffaf",
+				"#baffaf",
+				"#afe8ff",
+				"#d0afff",
 			},
 		},
 		autotag = {
@@ -42,7 +42,8 @@ function M.Config()
 			enable_rename = true,
 			enable_close = true,
 			enable_close_on_slash = true,
-			filetype = {
+			-- 支持语言
+			filetypes = {
 				"html",
 				"javascript",
 				"typescript",
@@ -50,6 +51,29 @@ function M.Config()
 				"typescriptreact",
 				"jsx",
 				"tsx",
+				"vue",
+				"markdown",
+			},
+			-- 单标签不触发
+			skip_tags = {
+				"area",
+				"base",
+				"br",
+				"col",
+				"command",
+				"embed",
+				"hr",
+				"img",
+				"slot",
+				"input",
+				"keygen",
+				"link",
+				"meta",
+				"param",
+				"source",
+				"track",
+				"wbr",
+				"menuitem",
 			},
 		},
 	})

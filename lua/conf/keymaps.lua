@@ -19,6 +19,8 @@ function M.Config()
 		{ mode = "n", key = "<leader>i", map = ":PackerSync<CR>", enabled = true },
 		{ mode = "n", key = "<leader>n", map = ":PackerClean<CR>", enabled = true },
 		{ mode = "n", key = "<leader>nh", map = ":set nohlsearch<CR>", enabled = true },
+		{ mode = "n", key = "<leader>ms", map = ":Mason<CR>", enabled = true },
+		{ mode = "n", key = "<leader>db", map = ":DBUI<CR>", enabled = true },
 	}
 
 	for _, map in ipairs(mappings) do
